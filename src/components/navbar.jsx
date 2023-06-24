@@ -30,9 +30,11 @@ const Navbar = () => {
     <section className=" w-full text-white fixed bg-gray-950  z-50   ">
       <div className=" flex justify-between items-center container xl:max-w-screen-xl mx-auto h-20 px-4  ">
         <div>
-          <h1 className="font-signature text-4xl hover:scale-105 duration-200 cursor-pointer ">
-            Himanshu
-          </h1>
+          <Link to="home" smooth duration={500}>
+            <h1 className="font-signature text-4xl hover:scale-105 duration-200 cursor-pointer ">
+              Himanshu
+            </h1>
+          </Link>
         </div>
         <div>
           <ul className="md:flex justify-end gap-8 hidden">
@@ -40,7 +42,7 @@ const Navbar = () => {
               return (
                 <li
                   key={id}
-                  className=" text-lg cursor-pointer capitalize text-gray-500 hover:scale-105 duration-200 font-medium hover:text-white "
+                  className=" text-lg cursor-pointer capitalize text-gray-500 hover:scale-105 hover:border-b  hover:border-r-gray-400 duration-200 font-medium hover:text-white "
                 >
                   <Link to={link} smooth duration={500}>
                     {link}

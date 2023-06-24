@@ -1,12 +1,21 @@
-import React from "react";
+import React, { useEffect } from "react";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Contact = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       name="contact"
       className="pb-32  bg-gradient-to-b from-black via-gray-800 to-gray-950 text-white "
     >
-      <div className="container xl:max-w-screen-xl mx-auto px-4 flex flex-col justify-center w-full h-full">
+      <div
+        className="container xl:max-w-screen-xl mx-auto px-4 flex flex-col justify-center w-full h-full"
+        data-aos="fade-up"
+        data-aos-delay="400"
+      >
         <div className="pb-8">
           <p className="text-4xl font-bold inline border-b-4 border-gray-500 p-2">
             Contact

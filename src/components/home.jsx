@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import HeroImage from "../assets/hero-image.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
+import AOS from "aos";
+import "aos/dist/aos.css";
 
 const Home = () => {
+  useEffect(() => {
+    AOS.init();
+  }, []);
   return (
     <div
       name="home"
@@ -11,17 +16,25 @@ const Home = () => {
     >
       <div className="px-4 xl:max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center justify-between h-full  ">
         <div className="md:w-1/2 w-full mx-auto md:mx-0 text-white">
-          <h2 className="text-3xl lg:text-6xl font-bold ">
+          <h2
+            className="text-3xl lg:text-6xl font-bold "
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             I'm a Frontend Developer
           </h2>
-          <p className="text-gray-500 text-xl font-medium mt-5   ">
+          <p
+            className="text-gray-500 text-xl font-medium mt-5   "
+            data-aos="fade-right"
+            data-aos-delay="300"
+          >
             I have 1+ years of experience building and desgining software and
             website.I am a kind of hard working and self-motivated person
             looking for an opportunities where I can utilize my skills make the
             best of my potential and contribute to the growth of your
             organization.
           </p>
-          <div className="mt-5 ">
+          <div className="mt-5 " data-aos="fade-right" data-aos-delay="300">
             <Link
               to="experience"
               smooth
@@ -35,7 +48,11 @@ const Home = () => {
             </Link>
           </div>
         </div>
-        <div className="md:w-3/12 w-full mx-auto md:mx-0 ">
+        <div
+          className="md:w-3/12 w-full mx-auto md:mx-0 "
+          data-aos="fade-left"
+          data-aos-delay="300"
+        >
           <img
             src={HeroImage}
             alt="My Profile"
