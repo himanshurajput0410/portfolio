@@ -12,7 +12,7 @@ const Home = () => {
   return (
     <div
       name="home"
-      className=" w-full bg-gradient-to-b from-gray-950  via-gray-800 to-black md:h-screen"
+      className=" w-full bg-gradient-to-b from-gray-950  via-gray-800 to-black md:h-screen pt-24 md:pt-0"
     >
       <div className="px-4 xl:max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center justify-between h-full  ">
         <div className="md:w-1/2 w-full mx-auto md:mx-0 text-white">
@@ -49,7 +49,7 @@ const Home = () => {
           </div>
         </div>
         <div
-          className="md:w-3/12 w-full mx-auto md:mx-0 "
+          className="md:w-3/12 w-full mx-auto md:mx-0 mt-5 md:mt-0 "
           data-aos="fade-left"
           data-aos-delay="300"
         >
