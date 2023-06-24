@@ -1,0 +1,50 @@
+import React from "react";
+import HeroImage from "../assets/hero-image.jpg";
+import { MdOutlineKeyboardArrowRight } from "react-icons/md";
+import { Link } from "react-scroll";
+
+const Home = () => {
+  return (
+    <div
+      name="home"
+      className=" w-full bg-gradient-to-b from-gray-950  via-gray-800 to-black md:h-screen"
+    >
+      <div className="px-4 xl:max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center justify-between h-full  ">
+        <div className="md:w-1/2 w-full mx-auto md:mx-0 text-white">
+          <h2 className="text-3xl lg:text-6xl font-bold ">
+            I'm a Frontend Developer
+          </h2>
+          <p className="text-gray-500 text-xl font-medium mt-5   ">
+            I have 1+ years of experience building and desgining software and
+            website.I am a kind of hard working and self-motivated person
+            looking for an opportunities where I can utilize my skills make the
+            best of my potential and contribute to the growth of your
+            organization.
+          </p>
+          <div className="mt-5 ">
+            <Link
+              to="experience"
+              smooth
+              duration={500}
+              className=" group px-6 py-3 text-xl font-semibold w-fit cursor-pointer text-white flex items-center gap-3  rounded-md bg-gradient-to-r from-cyan-400 to-blue-500   "
+            >
+              Skills
+              <span className="group-hover:rotate-90 duration-300">
+                <MdOutlineKeyboardArrowRight size={26} />
+              </span>
+            </Link>
+          </div>
+        </div>
+        <div className="md:w-3/12 w-full mx-auto md:mx-0 ">
+          <img
+            src={HeroImage}
+            alt="My Profile"
+            className="rounded-full border-4 border-gray-500 w-full mx-auto"
+          />
+        </div>
+      </div>
+    </div>
+  );
+};
+
+export default Home;
