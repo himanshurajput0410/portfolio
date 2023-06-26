@@ -64,7 +64,7 @@ const About = () => {
           </a>
         </p>
         <p className="text-2xl font-bold mt-4">Education</p>
-        <table className="mt-4 border-2 border-gray-400 hidden md:block">
+        <table className="mt-4 border-2 border-gray-400 hidden md:inline-table">
           <tr className="border-b-2 border-gray-400 ">
             <th className="text-center py-2  font-bold text-xl">
               Qualification
