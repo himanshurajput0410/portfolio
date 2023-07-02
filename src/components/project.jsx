@@ -65,7 +65,7 @@ const Projects = () => {
           </ul>
         </div>
 
-        <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mt-10">
+        {/* <div className="grid sm:grid-cols-2 md:grid-cols-3 gap-8 px-12 sm:px-0 mt-10">
           {project.map(({ id, src }) => {
             return (
               <div className="shadow-md shadow-gray-600 rounded-lg">
@@ -85,7 +85,7 @@ const Projects = () => {
               </div>
             );
           })}
-        </div>
+        </div> */}
       </div>
     </div>
   );
