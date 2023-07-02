@@ -3,9 +3,26 @@ import HeroImage from "../assets/hero-image.jpg";
 import { MdOutlineKeyboardArrowRight } from "react-icons/md";
 import { Link } from "react-scroll";
 import AOS from "aos";
+import Typed from "typed.js";
 import "aos/dist/aos.css";
 
 const Home = () => {
+  const el = React.useRef(null);
+
+  React.useEffect(() => {
+    const typed = new Typed(el.current, {
+      strings: ["Frontend Developer", "Wordpress Developer"],
+      typeSpeed: 100,
+      backSpeed: 100,
+      backDelay: 1000,
+      loop: true,
+    });
+
+    return () => {
+      typed.destroy();
+    };
+  }, []);
+
   useEffect(() => {
     AOS.init();
   }, []);
@@ -17,11 +34,11 @@ const Home = () => {
       <div className="px-4 xl:max-w-screen-xl container mx-auto flex flex-col md:flex-row items-center justify-between h-full  ">
         <div className="md:w-1/2 w-full mx-auto md:mx-0 text-white">
           <h2
-            className="text-3xl lg:text-6xl font-bold "
+            className="text-3xl lg:text-6xl font-bold animation-heading "
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            I'm a Frontend Developer
+            I'm a <span ref={el}></span>
           </h2>
           <p
             className="text-gray-500 text-xl font-medium mt-5   "
