@@ -46,7 +46,7 @@ const Home = () => {
             data-aos="fade-right"
             data-aos-delay="300"
           >
-            I have 2+ years of experience building and desgining software and
+            I have 1+ years of experience building and desgining software and
             website.I am a kind of hard working and self-motivated person
             looking for an opportunities where I can utilize my skills make the
             best of my potential and contribute to the growth of your
