@@ -17,11 +17,11 @@ function App() {
     // Simulating a delay for the loader animation
     setTimeout(() => {
       setIsLoading(false);
-    }, 3700);
+    }, 4000);
 
     setTimeout(() => {
       setShowHomePage(true);
-    }, 3700);
+    }, 4000);
   }, []);
   return (
     <>
