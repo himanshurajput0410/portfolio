@@ -6,6 +6,7 @@ import AOS from "aos";
 import Typed from "typed.js";
 import "aos/dist/aos.css";
 
+
 const Home = () => {
   const el = React.useRef(null);
 
