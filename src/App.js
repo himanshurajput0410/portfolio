@@ -13,16 +13,16 @@ function App() {
 
   const [showHomePage, setShowHomePage] = useState(false);
 
-  useEffect(() => {
-    // Simulating a delay for the loader animation
-    setTimeout(() => {
-      setIsLoading(false);
-    }, 4000);
+  // useEffect(() => {
+  //   // Simulating a delay for the loader animation
+  //   setTimeout(() => {
+  //     setIsLoading(false);
+  //   }, 4000);
 
-    setTimeout(() => {
-      setShowHomePage(true);
-    }, 4000);
-  }, []);
+  //   setTimeout(() => {
+  //     setShowHomePage(true);
+  //   }, 4000);
+  // }, []);
   return (
     <>
       {isLoading && <Loader />}
