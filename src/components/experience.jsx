@@ -96,7 +96,7 @@ const Experience = () => {
             </li>
             <li className="text-xl mt-4">
               I have done course in MERN stack from Universal informatics. (3
-              Months of training)
+              Months training)
             </li>
           </ol>
         </div>
