@@ -30,7 +30,7 @@ const SocialIcons = () => {
           Mail <HiOutlineMail size={26} />
         </>
       ),
-      href: "mailto:foo@gmail.com",
+      href: "mailto:himanshurajput0408@gmail.com",
     },
     {
       id: 4,
