@@ -167,6 +167,7 @@
     transform: translateY();
   }
 }
+
 @media screen and (max-width: 767px) {
  .circle-wrapper::after {
     font-size: 30px;
@@ -186,3 +187,4 @@
     transform: rotateZ(90deg) translateY(-19px);
 }
 }
+

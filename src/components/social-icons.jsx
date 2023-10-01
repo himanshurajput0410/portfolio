@@ -21,7 +21,7 @@ const SocialIcons = () => {
           GitHub <FaGithub size={26} />
         </>
       ),
-      href: "#",
+      href: "https://github.com/himanshurajput0410?tab=repositories",
     },
     {
       id: 3,
@@ -44,18 +44,15 @@ const SocialIcons = () => {
     },
   ];
   return (
-    <div className="lg:flex flex-col top-1/2 -translate-y-1/2 left-0 fixed hidden">
+    <div className="fixed left-0 flex-col hidden -translate-y-1/2 lg:flex top-1/2">
       <ul>
         {links.map(({ id, href, child, download }) => {
           return (
-            <li
-              className="flex justify-between items-center w-32 h-12
-         px-4 bg-gray-600 -ml-20 hover:rounded-tr-md hover:rounded-br-md duration-300 hover:ml-0 first:rounded-tr-md last:rounded-br-md"
-            >
+            <li className="flex items-center justify-between w-32 h-12 px-4 -ml-20 duration-300 bg-gray-600 hover:rounded-tr-md hover:rounded-br-md hover:ml-0 first:rounded-tr-md last:rounded-br-md">
               <a
                 key={id}
                 href={href}
-                className="flex justify-between items-center w-full text-white"
+                className="flex items-center justify-between w-full text-white"
                 download={download}
                 target="_blank"
                 rel="noreferrer"

@@ -27,22 +27,22 @@ const Navbar = () => {
     },
   ];
   return (
-    <section className=" w-full text-white fixed bg-gray-950  z-50   ">
-      <div className=" flex justify-between items-center container xl:max-w-screen-xl mx-auto h-20 px-4  ">
+    <section className="fixed z-50 w-full text-white bg-gray-950">
+      <div className="container flex items-center justify-between h-20 px-4 mx-auto xl:max-w-screen-xl">
         <div>
           <Link to="home" smooth duration={500}>
-            <h1 className="font-signature text-4xl hover:scale-105 duration-200 cursor-pointer ">
+            <h1 className="text-4xl duration-200 cursor-pointer font-signature hover:scale-105 ">
               Himanshu
             </h1>
           </Link>
         </div>
         <div>
-          <ul className="md:flex justify-end gap-8 hidden">
+          <ul className="justify-end hidden gap-8 md:flex">
             {links.map(({ id, link }) => {
               return (
                 <li
                   key={id}
-                  className=" text-lg cursor-pointer capitalize text-gray-500 hover:scale-105 hover:border-b  hover:border-r-gray-400 duration-200 font-medium hover:text-white "
+                  className="text-lg font-medium text-gray-500 capitalize duration-200 cursor-pointer hover:scale-105 hover:border-b hover:border-r-gray-400 hover:text-white"
                 >
                   <Link to={link} smooth duration={500}>
                     {link}
@@ -53,17 +53,17 @@ const Navbar = () => {
           </ul>
           <div
             onClick={() => setNav(!nav)}
-            className="text-gray-500 cursor-pointer relative z-10 block md:hidden "
+            className="relative z-10 block text-gray-500 cursor-pointer md:hidden "
           >
             {nav ? <FaTimes size={32} /> : <FaBars size={32} />}
           </div>
           {nav && (
-            <ul className="flex flex-col justify-center items-center  absolute top-0 left-0 w-full h-screen bg-gradient-to-b from-gray-950 via-gray-800 to-black text-gray-500">
+            <ul className="absolute top-0 left-0 flex flex-col items-center justify-center w-full h-screen text-gray-500 bg-gradient-to-b from-gray-950 via-gray-800 to-black">
               {links.map(({ id, link }) => {
                 return (
                   <li
                     key={id}
-                    className="px-4 py-6 capitalize cursor-pointer text-2xl "
+                    className="px-4 py-6 text-2xl capitalize cursor-pointer "
                   >
                     <Link
                       onClick={() => setNav(!nav)}
